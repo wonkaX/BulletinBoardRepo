@@ -2,7 +2,6 @@ package bulletin.board.core.system;
 
 import bulletin.board.core.facade.Item;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
