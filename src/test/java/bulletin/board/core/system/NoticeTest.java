@@ -1,5 +1,7 @@
 package bulletin.board.core.system;
 
+import static org.junit.Assert.assertNull;
+
 import org.junit.Test;
 
 public class NoticeTest {
