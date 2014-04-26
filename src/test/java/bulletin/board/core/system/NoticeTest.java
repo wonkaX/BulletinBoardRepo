@@ -14,7 +14,7 @@ public class NoticeTest {
 		Notice notice = null;
 		
 		try {
-			notice = new Notice(null, null, 10, 5);
+			notice = new Notice(null, null, null, 10, 5);
 		} catch(NullPointerException npex) {
 			;
 		}
@@ -25,12 +25,19 @@ public class NoticeTest {
 	@Test
 	public void noticeConstruction() {
 		
-		Notice notice = new Notice(NoticeType.SUPPLY, new DummyItem(), 10, 5);
+		Notice notice = new Notice(NoticeType.SUPPLY, new DummyUser(), new DummyItem(), 10, 5);
 		
 		assertNotNull(notice);
 		assertEquals(NoticeType.SUPPLY, notice.getType());
+		assertEquals(new DummyUser(), notice.getUser());
 		assertEquals(new DummyItem(), notice.getItem());
 		assertEquals(new Integer(10), notice.getAmount());
 		assertEquals(new Integer(5), notice.getPricePerItem());
+	}
+	
+	@Test(expected=NullPointerException.class)
+	public void noticeConstructionWrongAmount() {
+		
+		Notice notice = new Notice(NoticeType.DEMAND, new DummyUser(), new DummyItem(), 0, 12);				
 	}
 }
