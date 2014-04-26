@@ -1,18 +1,18 @@
 package bulletin.board.core.system;
 
-import bulletin.board.core.facade.Item;
+import bulletin.board.core.facade.User;
 
-public class DummyItem implements Item {
-	
+public class DummyUser implements User {
+
 	public String getName() {
-				
-		return "Dummy";
+		
+		return "DummyUser";
 	}
-
+	
 	@Override
 	public int hashCode() {
 		
-		return 31;
+		return 51;
 	}
 
 	@Override
@@ -20,5 +20,5 @@ public class DummyItem implements Item {
 		
 		return true;
 	}
-	
+
 }

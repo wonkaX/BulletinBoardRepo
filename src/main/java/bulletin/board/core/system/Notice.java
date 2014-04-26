@@ -1,6 +1,7 @@
 package bulletin.board.core.system;
 
 import bulletin.board.core.facade.Item;
+import bulletin.board.core.facade.User;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -12,6 +13,10 @@ public class Notice {
 	@Getter 
 	@NonNull
 	private NoticeType type;
+	
+	@Getter
+	@NonNull
+	private User user;
 	
 	@Getter 
 	@NonNull
