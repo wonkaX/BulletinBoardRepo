@@ -1,11 +1,11 @@
 package bulletin.board.core.system;
 
-import bulletin.board.core.facade.Item;
-import bulletin.board.core.facade.User;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import bulletin.board.core.facade.Item;
+import bulletin.board.core.facade.User;
 
 @RequiredArgsConstructor
 public class Notice {
@@ -31,4 +31,6 @@ public class Notice {
 	@Setter 
 	@NonNull
 	private Integer pricePerItem;
+
+	
 }

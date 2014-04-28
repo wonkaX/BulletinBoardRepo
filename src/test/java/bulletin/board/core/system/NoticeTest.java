@@ -35,9 +35,4 @@ public class NoticeTest {
 		assertEquals(new Integer(5), notice.getPricePerItem());
 	}
 	
-	@Test(expected=NullPointerException.class)
-	public void noticeConstructionWrongAmount() {
-		
-		Notice notice = new Notice(NoticeType.DEMAND, new DummyUser(), new DummyItem(), 0, 12);				
-	}
 }
