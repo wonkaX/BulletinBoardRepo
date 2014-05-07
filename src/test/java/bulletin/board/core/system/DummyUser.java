@@ -4,6 +4,11 @@ import bulletin.board.core.facade.User;
 
 public class DummyUser implements User {
 
+	public Integer getId() {
+		
+		return 1;
+	}
+	
 	public String getName() {
 		
 		return "DummyUser";

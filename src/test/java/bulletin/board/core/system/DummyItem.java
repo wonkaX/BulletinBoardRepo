@@ -4,6 +4,11 @@ import bulletin.board.core.facade.Item;
 
 public class DummyItem implements Item {
 	
+	public Integer getId() {
+		
+		return 1;
+	}
+	
 	public String getName() {
 				
 		return "Dummy";
